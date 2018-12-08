@@ -1,0 +1,93 @@
+[WARN]  The 'hbase10' client has been deprecated because HBase 1.0 is EOM. If you are using HBase 1.2+ try using the 'hbase12' client instead.
+java -cp /usr/local/ycsb-0.14.0/hbase10-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/protobuf-java-2.5.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-compress-1.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/paranamer-2.3.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-lang-2.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-httpclient-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jaxb-api-2.2.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/htrace-core-3.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-util-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-net-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/log4j-1.2.17.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jcodings-1.0.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-codec-1.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-auth-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-logging-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-cli-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jetty-util-6.1.26.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-annotations-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-mapper-asl-1.8.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-all-4.0.23.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpcore-4.2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-math3-3.1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-protocol-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/guava-12.0.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-el-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/activation-1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-annotations-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-collections-3.2.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsr305-1.3.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-log4j12-1.7.7.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-configuration-1.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-1.7.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-digester-1.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/avro-1.7.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xz-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/snappy-java-1.0.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-io-2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/joni-2.1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-client-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase10-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-3.6.2.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-common-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpclient-4.2.5.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsch-0.1.42.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xmlenc-0.52.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-core-1.8.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/stax-api-1.0-2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/zookeeper-3.4.6.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=200000 -p columnfamily=family -load
+Command line: -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=200000 -p columnfamily=family -load
+YCSB Client 0.14.0
+
+Loading workload...
+ (might take a few minutes for large data sets)
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+2018-12-08 16:45:50:958 0 sec: 0 operations; est completion in 0 second 
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-08 16:46:00:919 10 sec: 7332 operations; 733.13 current ops/sec; est completion in 4 minutes [INSERT: Count=7338, Max=431871, Min=304, Avg=715.4, 90=861, 99=4547, 99.9=10919, 99.99=44255] 
+2018-12-08 16:46:10:919 20 sec: 32657 operations; 2532.5 current ops/sec; est completion in 1 minute [INSERT: Count=25319, Max=28575, Min=224, Avg=388.4, 90=433, 99=731, 99.9=10895, 99.99=20623] 
+2018-12-08 16:46:20:919 30 sec: 57823 operations; 2516.6 current ops/sec; est completion in 1 minute [INSERT: Count=25166, Max=172287, Min=197, Avg=392.21, 90=432, 99=956, 99.9=11239, 99.99=31023] 
+2018-12-08 16:46:30:919 40 sec: 87209 operations; 2938.6 current ops/sec; est completion in 52 seconds [INSERT: Count=29386, Max=14631, Min=194, Avg=336.71, 90=378, 99=536, 99.9=9559, 99.99=12455] 
+2018-12-08 16:46:40:919 50 sec: 116640 operations; 2943.1 current ops/sec; est completion in 36 seconds [INSERT: Count=29431, Max=19007, Min=206, Avg=335.51, 90=379, 99=591, 99.9=9575, 99.99=14591] 
+2018-12-08 16:46:50:919 60 sec: 147065 operations; 3042.5 current ops/sec; est completion in 22 seconds [INSERT: Count=30425, Max=14407, Min=211, Avg=325.45, 90=354, 99=495, 99.9=10223, 99.99=12631] 
+2018-12-08 16:47:00:919 70 sec: 172007 operations; 2494.2 current ops/sec; est completion in 12 seconds [INSERT: Count=24942, Max=82879, Min=204, Avg=397.24, 90=394, 99=2525, 99.9=11335, 99.99=46495] 
+2018-12-08 16:47:10:919 80 sec: 192073 operations; 2006.6 current ops/sec; est completion in 4 second [INSERT: Count=20066, Max=1189887, Min=214, Avg=494.73, 90=448, 99=3537, 99.9=12239, 99.99=38975] 
+2018-12-08 16:47:15:292 84 sec: 200000 operations; 1812.71 current ops/sec; [CLEANUP: Count=2, Max=714239, Min=19, Avg=357001.5, 90=714239, 99=714239, 99.9=714239, 99.99=714239] [INSERT: Count=7927, Max=203007, Min=210, Avg=457.89, 90=463, 99=2135, 99.9=10943, 99.99=201983] 
+[OVERALL], RunTime(ms), 84375
+[OVERALL], Throughput(ops/sec), 2370.3703703703704
+[TOTAL_GCS_PS_Scavenge], Count, 294
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 632
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.7490370370370371
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 294
+[TOTAL_GC_TIME], Time(ms), 632
+[TOTAL_GC_TIME_%], Time(%), 0.7490370370370371
+[CLEANUP], Operations, 2
+[CLEANUP], AverageLatency(us), 357001.5
+[CLEANUP], MinLatency(us), 19
+[CLEANUP], MaxLatency(us), 714239
+[CLEANUP], 95thPercentileLatency(us), 714239
+[CLEANUP], 99thPercentileLatency(us), 714239
+[INSERT], Operations, 200000
+[INSERT], AverageLatency(us), 390.447655
+[INSERT], MinLatency(us), 194
+[INSERT], MaxLatency(us), 1189887
+[INSERT], 95thPercentileLatency(us), 481
+[INSERT], 99thPercentileLatency(us), 1191
+[INSERT], Return=OK, 200000
+[WARN]  The 'hbase10' client has been deprecated because HBase 1.0 is EOM. If you are using HBase 1.2+ try using the 'hbase12' client instead.
+java -cp /usr/local/ycsb-0.14.0/hbase10-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/protobuf-java-2.5.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-compress-1.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/paranamer-2.3.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-lang-2.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-httpclient-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jaxb-api-2.2.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/htrace-core-3.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-util-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-net-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/log4j-1.2.17.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jcodings-1.0.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-codec-1.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-auth-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-logging-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-cli-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jetty-util-6.1.26.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-annotations-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-mapper-asl-1.8.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-all-4.0.23.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpcore-4.2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-math3-3.1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-protocol-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/guava-12.0.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-el-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/activation-1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-annotations-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-collections-3.2.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsr305-1.3.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-log4j12-1.7.7.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-configuration-1.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-1.7.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-digester-1.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/avro-1.7.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xz-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/snappy-java-1.0.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-io-2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/joni-2.1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-client-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase10-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-3.6.2.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-common-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpclient-4.2.5.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsch-0.1.42.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xmlenc-0.52.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-core-1.8.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/stax-api-1.0-2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/zookeeper-3.4.6.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=200000 -p columnfamily=family -load
+Command line: -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=200000 -p columnfamily=family -load
+YCSB Client 0.14.0
+
+Loading workload...
+ (might take a few minutes for large data sets)
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+2018-12-08 17:32:22:584 0 sec: 0 operations; est completion in 0 second 
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-08 17:32:32:547 10 sec: 405 operations; 40.5 current ops/sec; est completion in 1 hour 22 minutes [INSERT: Count=405, Max=677375, Min=955, Avg=4326.95, 90=5159, 99=8439, 99.9=677375, 99.99=677375] 
+2018-12-08 17:32:42:547 20 sec: 16050 operations; 1564.66 current ops/sec; est completion in 3 minutes [INSERT: Count=15645, Max=27007, Min=306, Avg=625.26, 90=678, 99=3833, 99.9=10983, 99.99=22943] 
+2018-12-08 17:32:52:547 30 sec: 40710 operations; 2466 current ops/sec; est completion in 1 minute [INSERT: Count=24660, Max=32639, Min=202, Avg=398.6, 90=463, 99=767, 99.9=9431, 99.99=28863] 
+2018-12-08 17:33:02:547 40 sec: 66179 operations; 2546.9 current ops/sec; est completion in 1 minute [INSERT: Count=25469, Max=16303, Min=213, Avg=387.27, 90=459, 99=655, 99.9=9783, 99.99=14223] 
+2018-12-08 17:33:12:547 50 sec: 92818 operations; 2663.9 current ops/sec; est completion in 58 seconds [INSERT: Count=26639, Max=23039, Min=195, Avg=371.53, 90=451, 99=659, 99.9=10231, 99.99=19215] 
+2018-12-08 17:33:22:547 60 sec: 120187 operations; 2736.9 current ops/sec; est completion in 40 seconds [INSERT: Count=27369, Max=83455, Min=204, Avg=361.51, 90=390, 99=719, 99.9=11231, 99.99=20575] 
+2018-12-08 17:33:32:547 70 sec: 141153 operations; 2096.6 current ops/sec; est completion in 30 seconds [INSERT: Count=20966, Max=44479, Min=226, Avg=473.07, 90=459, 99=3859, 99.9=15015, 99.99=30543] 
+2018-12-08 17:33:42:547 80 sec: 162348 operations; 2119.5 current ops/sec; est completion in 19 seconds [INSERT: Count=21195, Max=111103, Min=215, Avg=467.54, 90=504, 99=3715, 99.9=14319, 99.99=30911] 
+2018-12-08 17:33:52:547 90 sec: 188427 operations; 2607.9 current ops/sec; est completion in 6 second [INSERT: Count=26079, Max=105215, Min=206, Avg=380.15, 90=438, 99=846, 99.9=10927, 99.99=22047] 
+2018-12-08 17:33:57:244 94 sec: 200000 operations; 2463.39 current ops/sec; [CLEANUP: Count=2, Max=318207, Min=12, Avg=159046, 90=318207, 99=318207, 99.9=318207, 99.99=318207] [INSERT: Count=11573, Max=15503, Min=218, Avg=374.37, 90=456, 99=673, 99.9=10327, 99.99=15231] 
+[OVERALL], RunTime(ms), 94701
+[OVERALL], Throughput(ops/sec), 2111.910117105416
+[TOTAL_GCS_PS_Scavenge], Count, 291
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 627
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.662083821712548
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 291
+[TOTAL_GC_TIME], Time(ms), 627
+[TOTAL_GC_TIME_%], Time(%), 0.662083821712548
+[CLEANUP], Operations, 2
+[CLEANUP], AverageLatency(us), 159046.0
+[CLEANUP], MinLatency(us), 12
+[CLEANUP], MaxLatency(us), 318207
+[CLEANUP], 95thPercentileLatency(us), 318207
+[CLEANUP], 99thPercentileLatency(us), 318207
+[INSERT], Operations, 200000
+[INSERT], AverageLatency(us), 425.466305
+[INSERT], MinLatency(us), 195
+[INSERT], MaxLatency(us), 677375
+[INSERT], 95thPercentileLatency(us), 567
+[INSERT], 99thPercentileLatency(us), 2007
+[INSERT], Return=OK, 200000

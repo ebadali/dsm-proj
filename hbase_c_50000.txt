@@ -1,0 +1,346 @@
+[WARN]  The 'hbase10' client has been deprecated because HBase 1.0 is EOM. If you are using HBase 1.2+ try using the 'hbase12' client instead.
+java -cp /usr/local/ycsb-0.14.0/hbase10-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/protobuf-java-2.5.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-compress-1.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/paranamer-2.3.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-lang-2.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-httpclient-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jaxb-api-2.2.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/htrace-core-3.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-util-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-net-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/log4j-1.2.17.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jcodings-1.0.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-codec-1.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-auth-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-logging-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-cli-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jetty-util-6.1.26.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-annotations-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-mapper-asl-1.8.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-all-4.0.23.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpcore-4.2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-math3-3.1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-protocol-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/guava-12.0.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-el-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/activation-1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-annotations-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-collections-3.2.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsr305-1.3.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-log4j12-1.7.7.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-configuration-1.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-1.7.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-digester-1.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/avro-1.7.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xz-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/snappy-java-1.0.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-io-2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/joni-2.1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-client-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase10-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-3.6.2.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-common-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpclient-4.2.5.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsch-0.1.42.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xmlenc-0.52.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-core-1.8.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/stax-api-1.0-2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/zookeeper-3.4.6.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloadc -p recordcount=50000 -p operationcount=50000 -p columnfamily=family -t
+Command line: -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloadc -p recordcount=50000 -p operationcount=50000 -p columnfamily=family -t
+YCSB Client 0.14.0
+
+Loading workload...
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+2018-12-08 19:13:23:892 0 sec: 0 operations; est completion in 0 second 
+2018-12-08 19:13:33:866 10 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:13:43:866 20 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:13:53:866 30 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:14:03:866 40 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:14:13:866 50 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:14:23:866 60 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:14:33:866 70 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:14:43:866 80 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:14:53:866 90 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:15:03:866 100 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:15:13:866 110 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:15:23:866 120 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:15:33:866 130 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:15:43:866 140 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:15:53:866 150 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:16:03:866 160 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:16:13:866 170 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:16:23:866 180 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:16:33:866 190 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:16:43:866 200 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:16:53:866 210 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:17:03:866 220 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:17:13:866 230 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:17:23:866 240 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:17:33:866 250 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:17:43:866 260 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:17:53:866 270 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:18:03:866 280 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:18:13:866 290 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:18:23:867 300 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:18:33:866 310 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:18:43:866 320 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:18:53:866 330 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:19:03:866 340 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:19:13:866 350 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:19:23:866 360 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:19:33:866 370 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:19:43:866 380 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:19:53:866 390 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:20:03:866 400 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:20:13:866 410 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:20:23:866 420 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:20:33:866 430 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:20:43:866 440 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:20:53:866 450 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:21:03:866 460 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:21:13:866 470 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:21:23:866 480 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:21:33:866 490 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:21:43:866 500 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:21:53:866 510 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:22:03:866 520 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:22:13:866 530 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:22:23:866 540 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:22:33:866 550 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:22:43:866 560 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:22:53:866 570 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:23:03:866 580 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:23:13:866 590 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:23:23:866 600 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:23:33:866 610 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:23:43:866 620 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:23:53:866 630 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:24:03:866 640 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:24:13:866 650 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:24:23:866 660 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:24:33:866 670 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:24:43:866 680 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:24:53:866 690 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:25:03:866 700 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:25:13:867 710 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:25:23:866 720 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:25:33:866 730 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:25:43:866 740 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:25:53:866 750 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:26:03:866 760 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:26:13:866 770 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:26:23:866 780 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:26:33:866 790 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:26:43:866 800 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:26:53:866 810 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:27:03:866 820 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:27:13:866 830 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:27:23:866 840 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:27:33:866 850 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:27:43:866 860 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:27:53:866 870 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:28:03:866 880 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:28:13:866 890 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:28:23:866 900 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:28:33:866 910 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:28:43:866 920 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:28:53:866 930 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:29:03:866 940 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:29:13:866 950 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:29:23:866 960 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:29:33:866 970 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:29:43:866 980 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:29:53:866 990 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:30:03:866 1000 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:30:13:866 1010 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:30:23:866 1020 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:30:33:866 1030 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:30:43:866 1040 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:30:53:866 1050 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:31:03:866 1060 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:31:13:866 1070 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:31:23:866 1080 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:31:33:866 1090 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:31:43:866 1100 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:31:53:866 1110 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:32:03:866 1120 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:32:13:866 1130 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:32:23:866 1140 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-08 19:32:33:866 1150 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Sat Dec 08 19:13:58 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:33 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:51 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:09 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:27 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:48 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:16:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:16:43 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:17:11 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:17:38 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:18:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:18:53 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:19:31 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:20:08 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:20:46 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:21:23 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:22:00 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:22:38 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:23:15 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:23:53 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:24:30 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:25:08 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:25:45 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:26:22 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:27:00 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:27:37 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:28:15 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:28:52 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:29:30 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:30:07 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:30:44 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:31:22 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:31:59 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:32:37 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Sat Dec 08 19:13:58 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:33 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:51 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:09 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:27 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:48 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:16:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:16:43 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:17:11 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:17:38 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:18:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:18:53 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:19:31 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:20:08 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:20:46 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:21:23 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:22:00 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:22:38 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:23:15 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:23:53 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:24:30 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:25:08 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:25:45 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:26:22 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:27:00 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:27:37 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:28:15 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:28:52 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:29:30 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:30:07 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:30:44 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:31:22 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:31:59 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:32:37 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.checkIfBaseNodeAvailable(ConnectionManager.java:860)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.access$400(ConnectionManager.java:535)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1435)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:221)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:482)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.checkIfBaseNodeAvailable(ConnectionManager.java:849)
+	... 13 more
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Sat Dec 08 19:13:58 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:33 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:51 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:09 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:27 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:48 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:16:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:16:43 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:17:11 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:17:38 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:18:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:18:53 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:19:31 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:20:08 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:20:46 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:21:23 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:22:00 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:22:38 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:23:15 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:23:53 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:24:30 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:25:08 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:25:45 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:26:22 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:27:00 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:27:37 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:28:15 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:28:52 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:29:30 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:30:07 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:30:44 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:31:22 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:31:59 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:32:37 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Sat Dec 08 19:13:58 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:33 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:14:51 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:09 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:27 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:15:48 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:16:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:16:43 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:17:11 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:17:38 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:18:16 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:18:53 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:19:31 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:20:08 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:20:46 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:21:23 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:22:00 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:22:38 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:23:15 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:23:53 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:24:30 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:25:08 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:25:45 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:26:22 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:27:00 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:27:37 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:28:15 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:28:52 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:29:30 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:30:07 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:30:44 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:31:22 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:31:59 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+Sat Dec 08 19:32:37 UTC 2018, RpcRetryingCaller{globalStartTime=1544296421137, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.checkIfBaseNodeAvailable(ConnectionManager.java:860)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.access$400(ConnectionManager.java:535)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1435)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:221)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:482)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.checkIfBaseNodeAvailable(ConnectionManager.java:849)
+	... 13 more
+2018-12-08 19:32:37:263 1153 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+[OVERALL], RunTime(ms), 1153397
+[OVERALL], Throughput(ops/sec), 0.0
+[TOTAL_GCS_PS_Scavenge], Count, 2
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 15
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.0013005062437304762
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 2
+[TOTAL_GC_TIME], Time(ms), 15
+[TOTAL_GC_TIME_%], Time(%), 0.0013005062437304762
